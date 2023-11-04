@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cab1c4aje72l1"
-path="res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"
+path="res://.godot/imported/wall_carpet_zm.obj-3b53657894d49d0a256398a169b84ef6.mesh"
 
 [deps]
 
-files=["res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"]
+files=["res://.godot/imported/wall_carpet_zm.obj-3b53657894d49d0a256398a169b84ef6.mesh"]
 
-source_file="res://assets/models/wall_carpet_zm.obj"
-dest_files=["res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh", "res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"]
+source_file="res://Assets/models/wall_carpet_zm.obj"
+dest_files=["res://.godot/imported/wall_carpet_zm.obj-3b53657894d49d0a256398a169b84ef6.mesh", "res://.godot/imported/wall_carpet_zm.obj-3b53657894d49d0a256398a169b84ef6.mesh"]
 
 [params]
 
