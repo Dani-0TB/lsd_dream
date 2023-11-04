@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cab1c4aje72l1"
+path="res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"]
+
+source_file="res://assets/models/wall_carpet_zm.obj"
+dest_files=["res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh", "res://.godot/imported/wall_carpet_zm.obj-d0749cddf1cf18e546fb98b316973fea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
