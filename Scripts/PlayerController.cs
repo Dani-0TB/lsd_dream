@@ -6,27 +6,29 @@ public partial class PlayerController : CharacterBody3D
 	public const float Speed = 5.0f;
 	public const float JumpVelocity = 4.5f;
 	public const float Sensitivity = 0.005f;
-    // Get the gravity from the project settings to be synced with RigidBody nodes.
     public float gravity = 9.8f;
-	
-
 	public Node3D head;
 	public Camera3D camera;
+	public RayCast3D interactionRay;
 
     public override void _Ready()
     {
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 		this.head = GetNode<Node3D>("Head");
 		this.camera = GetNode<Camera3D>("Head/Camera3D");
+		this.interactionRay = GetNode<RayCast3D>("interaction");
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
     {
         if (@event is InputEventMouseMotion mouseMotion)
 		{
-            head.RotateY(-mouseMotion.Relative.X * Sensitivity);
-            camera.RotateX(-mouseMotion.Relative.Y * Sensitivity);
+			var yRotation = -mouseMotion.Relative.X * Sensitivity;
+			var xRotation = -mouseMotion.Relative.Y * Sensitivity;
+            head.RotateY(yRotation);
+            camera.RotateX(xRotation);
 			camera.Rotation = new Vector3(Mathf.Clamp(camera.Rotation.X, Mathf.DegToRad(-60), Mathf.DegToRad(60)), camera.Rotation.Y, camera.Rotation.Z);
+			interactionRay.Rotation = new Vector3(camera.Rotation.X, head.Rotation.Y, 0);
         }
     }
 
@@ -43,9 +45,9 @@ public partial class PlayerController : CharacterBody3D
 			velocity.Y = JumpVelocity;
 
 		// Get the input direction and handle the movement/deceleration.
-		// As good practice, you should replace UI actions with custom gameplay actions.
 		Vector2 inputDir = Input.GetVector("strafe_left", "strafe_right", "forward", "backward");
 		Vector3 direction = (head.Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
+
 		if (direction != Vector3.Zero)
 		{
 			velocity.X = direction.X * Speed;
@@ -57,7 +59,7 @@ public partial class PlayerController : CharacterBody3D
 			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
 		}
 
-		Velocity = velocity;
+        Velocity = velocity;
 		MoveAndSlide();
 	}
 }

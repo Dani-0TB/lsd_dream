@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://cx1b2w435csvi"]
+
+[ext_resource type="PackedScene" uid="uid://bmmswef1easgg" path="res://Scenes/player.tscn" id="1_oefxl"]
+[ext_resource type="PackedScene" uid="uid://d3bcn0mvdro2r" path="res://Scenes/interactable.tscn" id="2_jdrf2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nn257"]
+sky_top_color = Color(0.0823529, 0.109804, 0.145098, 1)
+sky_horizon_color = Color(0.570588, 0.569701, 0.569525, 1)
+ground_horizon_color = Color(0.570588, 0.569701, 0.569525, 1)
+
+[sub_resource type="Sky" id="Sky_0y12j"]
+sky_material = SubResource("ProceduralSkyMaterial_nn257")
+
+[sub_resource type="Environment" id="Environment_vkbd4"]
+background_mode = 2
+sky = SubResource("Sky_0y12j")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtfe4"]
+albedo_color = Color(0.537255, 0.0235294, 0.713726, 1)
+
+[node name="DevWorld" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vkbd4")
+
+[node name="Player" parent="." instance=ExtResource("1_oefxl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.84955, 0)
+
+[node name="Interactable" parent="." instance=ExtResource("2_jdrf2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24822, 3.59716, -4.70266)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 10)
+use_collision = true
+size = Vector3(20, 4, 1)
+material = SubResource("StandardMaterial3D_wtfe4")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
+use_collision = true
+size = Vector3(20, 4, 1)
+material = SubResource("StandardMaterial3D_wtfe4")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 0)
+use_collision = true
+size = Vector3(1, 4, 20)
+material = SubResource("StandardMaterial3D_wtfe4")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 0)
+use_collision = true
+size = Vector3(1, 4, 20)
+material = SubResource("StandardMaterial3D_wtfe4")

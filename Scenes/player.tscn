@@ -26,3 +26,9 @@ shape = SubResource("ConvexPolygonShape3D_ov6ew")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4088, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="interaction" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30432, 0)
+target_position = Vector3(0, 0, -2)
+collide_with_areas = true
+collide_with_bodies = false
