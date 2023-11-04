@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://co3ds0gymfb3f"
+path="res://.godot/imported/wall_carpet_single.obj-2753c0f6d2c371f365bac477d397342a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_carpet_single.obj-2753c0f6d2c371f365bac477d397342a.mesh"]
+
+source_file="res://assets/models/wall_carpet_single.obj"
+dest_files=["res://.godot/imported/wall_carpet_single.obj-2753c0f6d2c371f365bac477d397342a.mesh", "res://.godot/imported/wall_carpet_single.obj-2753c0f6d2c371f365bac477d397342a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

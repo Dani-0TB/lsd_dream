@@ -2,18 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://efnerndpf17o"
-path.s3tc="res://.godot/imported/wall_carpet_zm_wall_0.png-bfd256ab95343c1b7398ae338f2a35d7.s3tc.ctex"
+uid="uid://bcwtl8q18dmqo"
+path.s3tc="res://.godot/imported/roof.png-3735cf19bc66422b8e57bf8b83a894cb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/models/wall_carpet_zm_wall_0.png"
-dest_files=["res://.godot/imported/wall_carpet_zm_wall_0.png-bfd256ab95343c1b7398ae338f2a35d7.s3tc.ctex"]
+source_file="res://assets/textures/roof.png"
+dest_files=["res://.godot/imported/roof.png-3735cf19bc66422b8e57bf8b83a894cb.s3tc.ctex"]
 
 [params]
 

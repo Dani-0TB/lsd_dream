@@ -1,6 +1,6 @@
 # Blender 3.6.5
 # www.blender.org
-mtllib floor_carpet.mtl
+mtllib floor_carpet_light.mtl
 o roof
 v -1.000000 2.000000 1.000000
 v 1.000000 2.000000 1.000000
@@ -12,7 +12,7 @@ vt 0.000000 1.000000
 vt 1.000000 1.000000
 vt 1.000000 0.000000
 s 0
-usemtl roof
+usemtl roof_light
 f 1/1/1 3/2/1 4/3/1 2/4/1
 o floor
 v -1.000000 0.000000 1.000000

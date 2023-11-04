@@ -6,31 +6,31 @@ public partial class PlayerController : CharacterBody3D
 	public const float Speed = 5.0f;
 	public const float JumpVelocity = 4.5f;
 	public const float Sensitivity = 0.005f;
-    // Get the gravity from the project settings to be synced with RigidBody nodes.
-    public float gravity = 9.8f;
+	// Get the gravity from the project settings to be synced with RigidBody nodes.
+	public float gravity = 9.8f;
 	
 
 	public Node3D head;
 	public Camera3D camera;
 
-    public override void _Ready()
-    {
+	public override void _Ready()
+	{
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 		this.head = GetNode<Node3D>("Head");
 		this.camera = GetNode<Camera3D>("Head/Camera3D");
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
-    {
-        if (@event is InputEventMouseMotion mouseMotion)
+	{
+		if (@event is InputEventMouseMotion mouseMotion)
 		{
-            head.RotateY(-mouseMotion.Relative.X * Sensitivity);
-            camera.RotateX(-mouseMotion.Relative.Y * Sensitivity);
+			head.RotateY(-mouseMotion.Relative.X * Sensitivity);
+			camera.RotateX(-mouseMotion.Relative.Y * Sensitivity);
 			camera.Rotation = new Vector3(Mathf.Clamp(camera.Rotation.X, Mathf.DegToRad(-40), Mathf.DegToRad(60)), camera.Rotation.Y, camera.Rotation.Z);
-        }
-    }
+		}
+	}
 
-    public override void _PhysicsProcess(double delta)
+	public override void _PhysicsProcess(double delta)
 	{
 		Vector3 velocity = Velocity;
 

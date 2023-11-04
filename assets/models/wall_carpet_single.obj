@@ -1,7 +1,7 @@
 # Blender 3.6.5
 # www.blender.org
-mtllib wall_carpet_xp.mtl
-o wall.xp
+mtllib wall_carpet_single.mtl
+o wall.xm
 v 1.000000 0.000000 -1.000000
 v 1.000000 0.000000 1.000000
 v 1.000000 2.000000 -1.000000
