@@ -18,7 +18,6 @@ public partial class PlayerController : CharacterBody3D
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 		this.head = GetNode<Node3D>("Head");
 		this.camera = GetNode<Camera3D>("Head/Camera3D");
-
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
@@ -27,6 +26,7 @@ public partial class PlayerController : CharacterBody3D
 		{
             head.RotateY(-mouseMotion.Relative.X * Sensitivity);
             camera.RotateX(-mouseMotion.Relative.Y * Sensitivity);
+			camera.Rotation = new Vector3(Mathf.Clamp(camera.Rotation.X, Mathf.DegToRad(-40), Mathf.DegToRad(60)), camera.Rotation.Y, camera.Rotation.Z);
         }
     }
 
@@ -45,7 +45,7 @@ public partial class PlayerController : CharacterBody3D
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
 		Vector2 inputDir = Input.GetVector("strafe_left", "strafe_right", "forward", "backward");
-		Vector3 direction = (Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
+		Vector3 direction = (head.Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
 		if (direction != Vector3.Zero)
 		{
 			velocity.X = direction.X * Speed;

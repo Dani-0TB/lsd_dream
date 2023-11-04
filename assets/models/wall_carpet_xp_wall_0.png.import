@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duo35acpcp7ci"
-path.s3tc="res://.godot/imported/wall_carpet_xp_wall_0.png-b4d757128a9eb78ace8afb0a1d513e52.s3tc.ctex"
+path.s3tc="res://.godot/imported/wall_carpet_xp_wall_0.png-3c661255c5dbd7d332edc216a8a09bdd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://assets/models/wall_carpet_xp_wall_0.png"
-dest_files=["res://.godot/imported/wall_carpet_xp_wall_0.png-b4d757128a9eb78ace8afb0a1d513e52.s3tc.ctex"]
+source_file="res://Assets/models/wall_carpet_xp_wall_0.png"
+dest_files=["res://.godot/imported/wall_carpet_xp_wall_0.png-3c661255c5dbd7d332edc216a8a09bdd.s3tc.ctex"]
 
 [params]
 

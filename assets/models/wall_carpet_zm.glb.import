@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dse8hlr1ggkbu"
-path="res://.godot/imported/wall_carpet_zm.glb-14abf3b6053223ae8dbba95fdc8eced9.scn"
+path="res://.godot/imported/wall_carpet_zm.glb-17ac41f71eb7e3b326d939cf208fc23d.scn"
 
 [deps]
 
-source_file="res://assets/models/wall_carpet_zm.glb"
-dest_files=["res://.godot/imported/wall_carpet_zm.glb-14abf3b6053223ae8dbba95fdc8eced9.scn"]
+source_file="res://Assets/models/wall_carpet_zm.glb"
+dest_files=["res://.godot/imported/wall_carpet_zm.glb-17ac41f71eb7e3b326d939cf208fc23d.scn"]
 
 [params]
 
