@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfxfr1x28u4my"]
+[gd_scene load_steps=8 format=3 uid="uid://cfxfr1x28u4my"]
 
 [ext_resource type="PackedScene" uid="uid://bjyt6rqbn8xlo" path="res://scenes/player.tscn" id="1_t8jpr"]
 [ext_resource type="PackedScene" uid="uid://cjuwhjd3to5qo" path="res://scenes/box.tscn" id="2_p3hec"]
+[ext_resource type="PackedScene" uid="uid://ceno017lh7u7t" path="res://scenes/green_box.tscn" id="3_ukxbe"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3jt3c"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -57,11 +58,10 @@ size = Vector3(18, 5, 1)
 material = SubResource("StandardMaterial3D_uexya")
 
 [node name="Player" parent="." instance=ExtResource("1_t8jpr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
 
 [node name="Box" parent="." instance=ExtResource("2_p3hec")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -4)
-isInteractive = false
 
-[node name="Box2" parent="." instance=ExtResource("2_p3hec")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, -4)
+[node name="GreenBox" parent="." instance=ExtResource("3_ukxbe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 3, -4)

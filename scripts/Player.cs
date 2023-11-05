@@ -15,6 +15,7 @@ public partial class Player : CharacterBody3D
 	public override void _Ready()
 	{
 		Input.MouseMode = Input.MouseModeEnum.Captured;
+		
 		this.head = GetNode<Node3D>("head");
 		this.camera = GetNode<Camera3D>("head/camera");
 		this.interactionRay = GetNode<RayCast3D>("head/camera/interaction");
@@ -28,6 +29,7 @@ public partial class Player : CharacterBody3D
 
 	public override void _UnhandledInput(InputEvent @event)
 	{
+		// Rotate head and camera with mouse
 		if (@event is InputEventMouseMotion mouseMotion)
 		{
 			var yRotation = -mouseMotion.Relative.X * Sensitivity;
@@ -47,7 +49,7 @@ public partial class Player : CharacterBody3D
 			var other = interactionRay.GetCollider();
 			if (other != null)
 			{
-				OnInteraction(other);
+                OnInteraction(other);
 			}
 		}
 
@@ -56,8 +58,8 @@ public partial class Player : CharacterBody3D
 			velocity.Y -= gravity * (float)delta;
 
 		// Handle Jump.
-		if (Input.IsActionJustPressed("jump") && IsOnFloor())
-			velocity.Y = JumpVelocity;
+		// if (Input.IsActionJustPressed("jump") && IsOnFloor())
+		//		velocity.Y = JumpVelocity;
 
 		// Get the input direction and handle the movement/deceleration.
 		Vector2 inputDir = Input.GetVector("strafe_left", "strafe_right", "forward", "backward");
@@ -77,8 +79,11 @@ public partial class Player : CharacterBody3D
 		MoveAndSlide();
 	}
 
-	private void OnInteraction(GodotObject other)
+	private static void OnInteraction(GodotObject other)
 	{
-		GD.Print("interaction");
+		if (other.HasMethod("OnInteraction"))
+		{
+            other.Call("OnInteraction");
+        }
 	}
 }
