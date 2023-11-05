@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtp3waiqmxst"
-path="res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"
+uid="uid://bdmmwjitx0nmi"
+path="res://.godot/imported/wall_carpet_door_closed.png-c1ee45dd38afe403b888947d60d98a9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/floor_carpet.png"
-dest_files=["res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"]
+source_file="res://assets/textures/wall_carpet_door_closed.png"
+dest_files=["res://.godot/imported/wall_carpet_door_closed.png-c1ee45dd38afe403b888947d60d98a9a.ctex"]
 
 [params]
 

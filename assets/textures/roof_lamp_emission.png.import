@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtp3waiqmxst"
-path="res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"
+uid="uid://dryv864ps63aj"
+path="res://.godot/imported/roof_lamp_emission.png-1b870b5cb761299cf46594ed9e5b213f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/floor_carpet.png"
-dest_files=["res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"]
+source_file="res://assets/textures/roof_lamp_emission.png"
+dest_files=["res://.godot/imported/roof_lamp_emission.png-1b870b5cb761299cf46594ed9e5b213f.ctex"]
 
 [params]
 

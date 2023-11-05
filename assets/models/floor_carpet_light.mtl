@@ -11,12 +11,12 @@ d 1.000000
 illum 1
 map_Kd D:/Users/ari13/Documents/github/lsd_dream/assets/textures/floor_carpet.png
 
-newmtl roof
+newmtl roof_light
 Ns 1000.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd D:/Users/ari13/Documents/github/lsd_dream/assets/textures/roof.png
+map_Kd D:/Users/ari13/Documents/github/lsd_dream/assets/textures/roof_lamp.png
+map_Ke D:/Users/ari13/Documents/github/lsd_dream/assets/textures/roof_lamp.png

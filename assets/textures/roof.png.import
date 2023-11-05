@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtp3waiqmxst"
-path="res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"
+uid="uid://clg4cjnvfs3ik"
+path="res://.godot/imported/roof.png-3735cf19bc66422b8e57bf8b83a894cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/floor_carpet.png"
-dest_files=["res://.godot/imported/floor_carpet.png-c8a039a320ee801ab48dd15a60b15faf.ctex"]
+source_file="res://assets/textures/roof.png"
+dest_files=["res://.godot/imported/roof.png-3735cf19bc66422b8e57bf8b83a894cb.ctex"]
 
 [params]
 
