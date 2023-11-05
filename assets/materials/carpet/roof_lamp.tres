@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bckwokibrqoql"]
+
+[ext_resource type="Texture2D" uid="uid://1isb1kmjg0ou" path="res://assets/textures/roof_lamp.png" id="1_xnfrx"]
+[ext_resource type="Texture2D" uid="uid://cyxrqd1px8rkj" path="res://assets/textures/roof_lamp_emission.png" id="2_tpkrl"]
+
+[resource]
+albedo_texture = ExtResource("1_xnfrx")
+metallic_specular = 0.0
+emission_enabled = true
+emission_energy_multiplier = 0.6
+emission_texture = ExtResource("2_tpkrl")
