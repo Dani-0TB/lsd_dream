@@ -59,4 +59,4 @@ interact={
 
 [layer_names]
 
-3d_physics/layer_2="interactions_mask"
+3d_physics/layer_2="interactions"

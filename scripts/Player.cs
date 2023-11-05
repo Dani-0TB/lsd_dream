@@ -42,6 +42,15 @@ public partial class Player : CharacterBody3D
 	{
 		Vector3 velocity = Velocity;
 
+		if (Input.IsActionJustPressed("interact"))
+		{
+			var other = interactionRay.GetCollider();
+			if (other != null)
+			{
+				OnInteraction(other);
+			}
+		}
+
 		// Add the gravity.
 		if (!IsOnFloor())
 			velocity.Y -= gravity * (float)delta;
@@ -66,5 +75,10 @@ public partial class Player : CharacterBody3D
 
 		Velocity = velocity;
 		MoveAndSlide();
+	}
+
+	private void OnInteraction(GodotObject other)
+	{
+		GD.Print("interaction");
 	}
 }
