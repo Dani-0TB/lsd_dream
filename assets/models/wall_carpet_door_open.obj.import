@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cuawxs2m0ufv8"
-path="res://.godot/imported/wall_carpet_door_open.obj-64ea84676d24a43a46cc27c78b92892f.mesh"
+path="res://.godot/imported/wall_carpet_door_open.obj-d4e11860751c8dcc8f291e517f88cf93.mesh"
 
 [deps]
 
-files=["res://.godot/imported/wall_carpet_door_open.obj-64ea84676d24a43a46cc27c78b92892f.mesh"]
+files=["res://.godot/imported/wall_carpet_door_open.obj-d4e11860751c8dcc8f291e517f88cf93.mesh"]
 
-source_file="res://assets/models/wall_carpet_door_open.obj"
-dest_files=["res://.godot/imported/wall_carpet_door_open.obj-64ea84676d24a43a46cc27c78b92892f.mesh", "res://.godot/imported/wall_carpet_door_open.obj-64ea84676d24a43a46cc27c78b92892f.mesh"]
+source_file="res://Assets/models/wall_carpet_door_open.obj"
+dest_files=["res://.godot/imported/wall_carpet_door_open.obj-d4e11860751c8dcc8f291e517f88cf93.mesh", "res://.godot/imported/wall_carpet_door_open.obj-d4e11860751c8dcc8f291e517f88cf93.mesh"]
 
 [params]
 

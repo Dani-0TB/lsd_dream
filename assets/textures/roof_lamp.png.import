@@ -11,7 +11,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/roof_lamp.png"
+source_file="res://Assets/textures/roof_lamp.png"
 dest_files=["res://.godot/imported/roof_lamp.png-56254ca0128628d3297e4cd40a1c9cfd.s3tc.ctex"]
 
 [params]

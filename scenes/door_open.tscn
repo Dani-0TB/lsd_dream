@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://v4d83lg2c6h6"]
 
-[ext_resource type="ArrayMesh" uid="uid://cuawxs2m0ufv8" path="res://assets/models/wall_carpet_door_open.obj" id="1_od5lq"]
+[ext_resource type="ArrayMesh" uid="uid://cuawxs2m0ufv8" path="res://Assets/models/wall_carpet_door_open.obj" id="1_od5lq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fqa1r"]
 size = Vector3(0.2, 2, 0.3)

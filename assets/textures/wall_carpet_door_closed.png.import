@@ -11,7 +11,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/wall_carpet_door_closed.png"
+source_file="res://Assets/textures/wall_carpet_door_closed.png"
 dest_files=["res://.godot/imported/wall_carpet_door_closed.png-c1ee45dd38afe403b888947d60d98a9a.s3tc.ctex"]
 
 [params]

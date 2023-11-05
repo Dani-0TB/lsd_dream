@@ -11,7 +11,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/wall_0.png"
+source_file="res://Assets/textures/wall_0.png"
 dest_files=["res://.godot/imported/wall_0.png-98b9f385fb0eab457a5b802c85f08981.s3tc.ctex"]
 
 [params]
