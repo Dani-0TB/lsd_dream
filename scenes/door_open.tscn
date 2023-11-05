@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://r1i0juh6ukkc"]
+[gd_scene load_steps=4 format=3 uid="uid://r1i0juh6ukkc"]
 
-[ext_resource type="ArrayMesh" uid="uid://4bguadxawxh2" path="res://assets/models/wall_carpet_door_open.obj" id="1_p12d4"]
+[ext_resource type="Material" uid="uid://cgft7gax1nefm" path="res://assets/materials/carpet/wall_carpet_door.tres" id="1_nsgfe"]
+[ext_resource type="ArrayMesh" uid="uid://4bguadxawxh2" path="res://assets/models/original/wall_carpet_door_open.obj" id="1_p12d4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kjbdg"]
 size = Vector3(0.2, 2, 0.3)
@@ -9,6 +10,7 @@ size = Vector3(0.2, 2, 0.3)
 metadata/_edit_group_ = true
 
 [node name="WallCarpetDoorOpen" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_nsgfe")
 mesh = ExtResource("1_p12d4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
