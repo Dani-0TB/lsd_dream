@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://v4d83lg2c6h6"]
+
+[ext_resource type="ArrayMesh" uid="uid://cuawxs2m0ufv8" path="res://assets/models/wall_carpet_door_open.obj" id="1_od5lq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fqa1r"]
+size = Vector3(0.2, 2, 0.3)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.85)
+shape = SubResource("BoxShape3D_fqa1r")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.845)
+shape = SubResource("BoxShape3D_fqa1r")
+
+[node name="WallCarpetDoorOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_od5lq")

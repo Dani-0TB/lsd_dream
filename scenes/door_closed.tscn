@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3bl3ymokek3i"]
+
+[ext_resource type="ArrayMesh" uid="uid://cruboy243p376" path="res://assets/models/wall_carpet_door_closed.obj" id="1_dlbvv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_00783"]
+size = Vector3(0.2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_64rbs"]
+size = Vector3(2, 2, 2)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_dlbvv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_00783")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_64rbs")
