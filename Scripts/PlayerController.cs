@@ -7,6 +7,7 @@ public partial class PlayerController : CharacterBody3D
 	public const float JumpVelocity = 4.5f;
 	public const float Sensitivity = 0.005f;
     public float gravity = 9.8f;
+
 	public Node3D head;
 	public Camera3D camera;
 	public RayCast3D interactionRay;
@@ -16,10 +17,13 @@ public partial class PlayerController : CharacterBody3D
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 		this.head = GetNode<Node3D>("Head");
 		this.camera = GetNode<Camera3D>("Head/Camera3D");
-		this.interactionRay = GetNode<RayCast3D>("interaction");
+		this.interactionRay = GetNode<RayCast3D>("Head/Camera3D/interaction");
 
 		head.Rotation = new Vector3(0, Rotation.Y, 0);
 		Rotation = Vector3.Zero;
+		var mesh = GetNode<MeshInstance3D>("pill");
+		mesh.Visible = false;
+		
     }
 
 	public override void _UnhandledInput(InputEvent @event)

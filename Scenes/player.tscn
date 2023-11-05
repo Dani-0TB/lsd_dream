@@ -13,7 +13,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_w8vrw")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="pill" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.856519, 0)
 mesh = SubResource("CapsuleMesh_a13wg")
 surface_material_override/0 = SubResource("StandardMaterial3D_8qs0f")
@@ -28,7 +28,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4088, 0)
 [node name="Camera3D" type="Camera3D" parent="Head"]
 
 [node name="interaction" type="RayCast3D" parent="Head/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.104482, 0)
-target_position = Vector3(0, 0, -2)
+target_position = Vector3(0, 0, -3)
 collide_with_areas = true
 collide_with_bodies = false
+debug_shape_custom_color = Color(0.12549, 0.12549, 0.12549, 0.0392157)
