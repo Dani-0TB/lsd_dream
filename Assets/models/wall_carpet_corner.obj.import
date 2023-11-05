@@ -3,15 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://bjybcx31ht4hg"
-path="res://.godot/imported/wall_carpet_corner.obj-9730122a04d899d6092afbacf06cbb17.mesh"
+uid="uid://0t4jb0tbma1w"
+path="res://.godot/imported/wall_carpet_corner.obj-3e23b17ecbcee32fbd8a09355e8955ad.mesh"
 
 [deps]
 
-files=["res://.godot/imported/wall_carpet_corner.obj-9730122a04d899d6092afbacf06cbb17.mesh"]
+files=["res://.godot/imported/wall_carpet_corner.obj-3e23b17ecbcee32fbd8a09355e8955ad.mesh"]
 
-source_file="res://Assets/models/wall_carpet_corner.obj"
-dest_files=["res://.godot/imported/wall_carpet_corner.obj-9730122a04d899d6092afbacf06cbb17.mesh", "res://.godot/imported/wall_carpet_corner.obj-9730122a04d899d6092afbacf06cbb17.mesh"]
+source_file="res://assets/models/wall_carpet_corner.obj"
+dest_files=["res://.godot/imported/wall_carpet_corner.obj-3e23b17ecbcee32fbd8a09355e8955ad.mesh", "res://.godot/imported/wall_carpet_corner.obj-3e23b17ecbcee32fbd8a09355e8955ad.mesh"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcncdqbyituda"
-path="res://.godot/imported/roof_lamp.png-ad3b1a5b2ce37ae1ca5589888716522e.ctex"
+uid="uid://dmoj8xwti8vff"
+path="res://.godot/imported/roof_lamp.png-56254ca0128628d3297e4cd40a1c9cfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/roof_lamp.png"
-dest_files=["res://.godot/imported/roof_lamp.png-ad3b1a5b2ce37ae1ca5589888716522e.ctex"]
+source_file="res://assets/textures/roof_lamp.png"
+dest_files=["res://.godot/imported/roof_lamp.png-56254ca0128628d3297e4cd40a1c9cfd.ctex"]
 
 [params]
 

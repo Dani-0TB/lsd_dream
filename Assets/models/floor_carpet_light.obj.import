@@ -3,15 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://blab05ilwqquh"
-path="res://.godot/imported/floor_carpet_light.obj-5ae02fb31aed22c44263e146356ce09b.mesh"
+uid="uid://cwhipblaw1gub"
+path="res://.godot/imported/floor_carpet_light.obj-aa55c12b0bd3444a8ec51447c0eb2f4f.mesh"
 
 [deps]
 
-files=["res://.godot/imported/floor_carpet_light.obj-5ae02fb31aed22c44263e146356ce09b.mesh"]
+files=["res://.godot/imported/floor_carpet_light.obj-aa55c12b0bd3444a8ec51447c0eb2f4f.mesh"]
 
-source_file="res://Assets/models/floor_carpet_light.obj"
-dest_files=["res://.godot/imported/floor_carpet_light.obj-5ae02fb31aed22c44263e146356ce09b.mesh", "res://.godot/imported/floor_carpet_light.obj-5ae02fb31aed22c44263e146356ce09b.mesh"]
+source_file="res://assets/models/floor_carpet_light.obj"
+dest_files=["res://.godot/imported/floor_carpet_light.obj-aa55c12b0bd3444a8ec51447c0eb2f4f.mesh", "res://.godot/imported/floor_carpet_light.obj-aa55c12b0bd3444a8ec51447c0eb2f4f.mesh"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://b0wabjf5rik8q"
-path="res://.godot/imported/wall_carpet_parallel.obj-c8852fefd21f089f28f319e6d63fc86f.mesh"
+uid="uid://8n6ft1cwtsfq"
+path="res://.godot/imported/wall_carpet_parallel.obj-c9cb3ddf6031ddb89ab3acb23509e012.mesh"
 
 [deps]
 
-files=["res://.godot/imported/wall_carpet_parallel.obj-c8852fefd21f089f28f319e6d63fc86f.mesh"]
+files=["res://.godot/imported/wall_carpet_parallel.obj-c9cb3ddf6031ddb89ab3acb23509e012.mesh"]
 
-source_file="res://Assets/models/wall_carpet_parallel.obj"
-dest_files=["res://.godot/imported/wall_carpet_parallel.obj-c8852fefd21f089f28f319e6d63fc86f.mesh", "res://.godot/imported/wall_carpet_parallel.obj-c8852fefd21f089f28f319e6d63fc86f.mesh"]
+source_file="res://assets/models/wall_carpet_parallel.obj"
+dest_files=["res://.godot/imported/wall_carpet_parallel.obj-c9cb3ddf6031ddb89ab3acb23509e012.mesh", "res://.godot/imported/wall_carpet_parallel.obj-c9cb3ddf6031ddb89ab3acb23509e012.mesh"]
 
 [params]
 
