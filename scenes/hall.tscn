@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cecmsojhmykq4"]
 
 [ext_resource type="MeshLibrary" uid="uid://l53rq5bp7rx6" path="res://assets/mesh_library/carpet.tres" id="1_podpq"]
-[ext_resource type="PackedScene" path="res://scenes/door_closed.tscn" id="8_wjhf8"]
+[ext_resource type="PackedScene" uid="uid://dmq6fveyth8s7" path="res://scenes/door_closed.tscn" id="8_wjhf8"]
 [ext_resource type="PackedScene" uid="uid://bjyt6rqbn8xlo" path="res://scenes/player.tscn" id="9_f62cu"]
-[ext_resource type="PackedScene" path="res://scenes/door_open.tscn" id="10_1uyw2"]
+[ext_resource type="PackedScene" uid="uid://r1i0juh6ukkc" path="res://scenes/door_open.tscn" id="10_1uyw2"]
 
 [node name="hall" type="Node3D"]
 

@@ -7,8 +7,9 @@ public partial class Player : CharacterBody3D
 	public bool CanJump = false;
     [Export]
     public float Sensitivity = 0.8f;
+    [Export]
+    public float Speed = 1.5f;
 
-    public const float Speed = 5.0f;
 	public const float JumpVelocity = 4.5f;
 	public float gravity = 9.8f;
 
