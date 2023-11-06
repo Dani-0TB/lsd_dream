@@ -11,6 +11,7 @@ size = Vector3(2, 2, 2)
 script = ExtResource("1_ia26n")
 open = ExtResource("2_gmbt1")
 close = ExtResource("3_m74sf")
+state_start = 1
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmq6fveyth8s7"]
+[gd_scene load_steps=3 format=3 uid="uid://dmq6fveyth8s7"]
 
-[ext_resource type="ArrayMesh" uid="uid://drrcwvewvdwk" path="res://assets/models/original/wall_carpet_door_closed.obj" id="1_a286u"]
-[ext_resource type="Material" uid="uid://cgft7gax1nefm" path="res://assets/materials/carpet/wall_carpet_door.tres" id="1_b2bf6"]
+[ext_resource type="ArrayMesh" uid="uid://b578k0wotgmik" path="res://assets/models/carpet/wall_door_closed.tres" id="1_230u1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xt6dt"]
 size = Vector3(0.2, 2, 2)
@@ -15,5 +14,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_xt6dt")
 
 [node name="WallCarpetDoorClosed" type="MeshInstance3D" parent="."]
-material_override = ExtResource("1_b2bf6")
-mesh = ExtResource("1_a286u")
+mesh = ExtResource("1_230u1")
