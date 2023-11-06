@@ -5,10 +5,11 @@ public partial class Player : CharacterBody3D
 {
 	[Export]
 	public bool CanJump = false;
+    [Export]
+    public float Sensitivity = 0.8f;
 
-	public const float Speed = 5.0f;
+    public const float Speed = 5.0f;
 	public const float JumpVelocity = 4.5f;
-	public const float Sensitivity = 0.005f;
 	public float gravity = 9.8f;
 
 	public Node3D head;
@@ -48,11 +49,12 @@ public partial class Player : CharacterBody3D
 	 */
     public override void _UnhandledInput(InputEvent @event)
     {
+		float sensitivityFactor = 0.002f;
         // Rotate head and camera with mouse
         if (@event is InputEventMouseMotion mouseMotion)
         {
-            var yRotation = -mouseMotion.Relative.X * Sensitivity;
-            var xRotation = -mouseMotion.Relative.Y * Sensitivity;
+            var yRotation = -mouseMotion.Relative.X * Sensitivity * sensitivityFactor;
+            var xRotation = -mouseMotion.Relative.Y * Sensitivity * sensitivityFactor;
 
             head.RotateY(yRotation);
             camera.RotateX(xRotation);
