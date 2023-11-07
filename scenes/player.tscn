@@ -9,6 +9,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_wdl6i")
+Speed = 1.5
 
 [node name="pill" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -22,6 +23,7 @@ shape = SubResource("ConvexPolygonShape3D_0pwnj")
 
 [node name="camera" type="Camera3D" parent="head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47809, 0)
+keep_aspect = 0
 
 [node name="interaction" type="RayCast3D" parent="head/camera"]
 target_position = Vector3(0, 0, -3)

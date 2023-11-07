@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://hsjb2as8d1hj"]
+[gd_scene load_steps=6 format=3 uid="uid://hsjb2as8d1hj"]
 
 [ext_resource type="Script" path="res://scripts/Door.cs" id="1_ia26n"]
 [ext_resource type="PackedScene" uid="uid://r1i0juh6ukkc" path="res://scenes/door_open.tscn" id="2_gmbt1"]
 [ext_resource type="PackedScene" uid="uid://dmq6fveyth8s7" path="res://scenes/door_closed.tscn" id="3_m74sf"]
+[ext_resource type="PackedScene" uid="uid://dwhtbplb02b2m" path="res://scenes/interacton_component.tscn" id="4_83cgi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cccxm"]
 size = Vector3(2, 2, 2)
@@ -12,8 +13,8 @@ script = ExtResource("1_ia26n")
 open = ExtResource("2_gmbt1")
 close = ExtResource("3_m74sf")
 
-[node name="Area3D" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+[node name="interactionComponent" parent="." instance=ExtResource("4_83cgi")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="interactionComponent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_cccxm")

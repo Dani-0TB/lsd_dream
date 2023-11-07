@@ -1,31 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmq6fveyth8s7"]
+[gd_resource type="ArrayMesh" load_steps=3 format=3 uid="uid://b578k0wotgmik"]
 
-[ext_resource type="Material" uid="uid://cgft7gax1nefm" path="res://assets/materials/carpet/wall_carpet_door.tres" id="1_r5mhf"]
+[ext_resource type="Texture2D" uid="uid://4fqtl0cmsq7w" path="res://assets/textures/wall_carpet_door_closed.png" id="1_2wl6i"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_xt6dt"]
-size = Vector3(0.2, 2, 2)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihkgd"]
+resource_name = "door"
+albedo_texture = ExtResource("1_2wl6i")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_pbo0i"]
+[resource]
 _surfaces = [{
 "aabb": AABB(-0.1, 0, -1, 0.2, 2.00001, 2.00001),
 "attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 128, 63),
 "format": 4119,
 "index_count": 12,
 "index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 2, 0, 1, 0, 3, 0, 4, 0, 5, 0, 6, 0, 6, 0, 5, 0, 7, 0),
-"material": ExtResource("1_r5mhf"),
+"material": SubResource("StandardMaterial3D_ihkgd"),
 "name": "door",
 "primitive": 3,
 "vertex_count": 8,
 "vertex_data": PackedByteArray(205, 204, 204, 189, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 255, 127, 255, 255, 0, 0, 205, 204, 204, 189, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 255, 127, 255, 255, 0, 0, 205, 204, 204, 189, 0, 0, 0, 64, 0, 0, 128, 191, 0, 0, 255, 127, 255, 255, 0, 0, 205, 204, 204, 189, 0, 0, 0, 0, 0, 0, 128, 191, 0, 0, 255, 127, 255, 255, 0, 0, 205, 204, 204, 61, 0, 0, 0, 64, 0, 0, 128, 191, 255, 255, 255, 127, 255, 255, 255, 255, 205, 204, 204, 61, 0, 0, 0, 0, 0, 0, 128, 191, 255, 255, 255, 127, 255, 255, 255, 255, 205, 204, 204, 61, 0, 0, 0, 64, 0, 0, 128, 63, 255, 255, 255, 127, 255, 255, 255, 255, 205, 204, 204, 61, 0, 0, 0, 0, 0, 0, 128, 63, 255, 255, 255, 127, 255, 255, 255, 255)
 }]
-
-[node name="door_closed" type="StaticBody3D"]
-collision_mask = 0
-metadata/_edit_group_ = true
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("BoxShape3D_xt6dt")
-
-[node name="WallCarpetDoorClosed" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_pbo0i")
