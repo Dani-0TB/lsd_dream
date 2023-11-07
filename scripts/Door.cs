@@ -52,7 +52,6 @@ public partial class Door : Node3D
 
 	public void OnInteraction()
 	{
-		GD.Print("poerta");
 		switch(state_current)
 		{
 			case State.Open:
