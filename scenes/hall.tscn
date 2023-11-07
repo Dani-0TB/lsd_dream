@@ -1,10 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://clnkwu2hefqtk"]
+[gd_scene load_steps=8 format=3 uid="uid://clnkwu2hefqtk"]
 
 [ext_resource type="MeshLibrary" uid="uid://l53rq5bp7rx6" path="res://assets/mesh_library/carpet.tres" id="1_podpq"]
 [ext_resource type="PackedScene" uid="uid://hsjb2as8d1hj" path="res://scenes/door.tscn" id="5_htxrp"]
 [ext_resource type="PackedScene" uid="uid://bjyt6rqbn8xlo" path="res://scenes/player.tscn" id="9_f62cu"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lbwru"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_jpfcs"]
+sky_material = SubResource("ProceduralSkyMaterial_lbwru")
+
+[sub_resource type="Environment" id="Environment_1uul6"]
+background_mode = 2
+sky = SubResource("Sky_jpfcs")
+tonemap_mode = 2
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+
+[sub_resource type="FogMaterial" id="FogMaterial_y6jax"]
+albedo = Color(0, 0, 0, 1)
+
 [node name="hall" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1uul6")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_podpq")
@@ -54,3 +75,8 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1, 2,
 
 [node name="SpotLight3D6" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1, 2, -15)
+
+[node name="FogVolume" type="FogVolume" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+size = Vector3(6, 4, 6)
+material = SubResource("FogMaterial_y6jax")
