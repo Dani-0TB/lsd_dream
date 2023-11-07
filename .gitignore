@@ -3,3 +3,6 @@
 .vs/
 **/*.import
 .vscode/
+lsd_dream.csproj
+lsd_dream.csproj.*
+lsd_dream.sln
